@@ -14,17 +14,15 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         Vector2 pos = transform.position;
-        pos.x -= speed;
+        Vector2 squareInScreenSpace = Camera.main.WorldToScreenPoint(pos);
+        pos.x += speed;
         transform.position = pos;
-            if (pos.x >= 7.8)
+        if (squareInScreenSpace.x <= 0 || squareInScreenSpace.x >= Screen.width)
         {
             speed = speed * -1;
         }
-        if (pos.x <= -7.7)
-        {
-            speed = speed * -1;
-        }
+
     }
 }
+

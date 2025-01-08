@@ -16,15 +16,13 @@ public class movementcode : MonoBehaviour
     void Update()
     {
         Vector2 pos = transform.position;
+        Vector2 squareInScreenSpace = Camera.main.WorldToScreenPoint(pos);
         pos.x += speed;
         transform.position = pos;
-        if (pos.x >= 7.7)
+        if (squareInScreenSpace.x < 0 || squareInScreenSpace.x > Screen.width)
         {
             speed = speed * -1;
         }
-        if (pos.x <= -7.7)
-        {
-            speed = speed * -1;
-        }
+        
     }
 }
