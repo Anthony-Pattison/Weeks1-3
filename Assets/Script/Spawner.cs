@@ -20,6 +20,7 @@ public class Spawner : MonoBehaviour
             // this creates a prefab based on the position of the mouse
             Instantiate(prefab, mouse, Quaternion.identity);
             //Instantiate(prefab, transform);
+            //
         }
     }
 }
