@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    float speed = 0.01f;
+    public float speed = 0.01f;
+    public SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriteRenderer.color = Random.ColorHSV();
     }
 
     // Update is called once per frame

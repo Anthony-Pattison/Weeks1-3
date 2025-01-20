@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 18263719}
   - component: {fileID: 18263718}
-  - component: {fileID: 18263717}
+  - component: {fileID: 18263720}
   m_Layer: 0
   m_Name: topleft
   m_TagString: Untagged
@@ -140,18 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &18263717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18263716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d2d7d784d61b543951f54d6532ccde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &18263718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -219,6 +207,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1147772172}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &18263720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18263716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb5cd3233932e5429c623fa500c01b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -0.01
+  spriteRenderer: {fileID: 18263718}
 --- !u!1 &152848184
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb5cd3233932e5429c623fa500c01b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.01
+  spriteRenderer: {fileID: 1068812788}
 --- !u!1 &1147772171
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,6 +686,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb5cd3233932e5429c623fa500c01b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.01
+  spriteRenderer: {fileID: 1929193628}
 --- !u!1 &2056508247
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056508250}
   - component: {fileID: 2056508249}
-  - component: {fileID: 2056508248}
+  - component: {fileID: 2056508251}
   m_Layer: 0
   m_Name: bottomleft
   m_TagString: Untagged
@@ -700,18 +706,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2056508248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056508247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d2d7d784d61b543951f54d6532ccde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2056508249
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -779,6 +773,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1147772172}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056508251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056508247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb5cd3233932e5429c623fa500c01b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -0.01
+  spriteRenderer: {fileID: 2056508249}
 --- !u!1001 &5667515785750454217
 PrefabInstance:
   m_ObjectHideFlags: 0
