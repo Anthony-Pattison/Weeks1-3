@@ -35,6 +35,7 @@ public class bouncing : MonoBehaviour
         transform.position = pos;
 
         transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
+        transform.eulerAngles = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
