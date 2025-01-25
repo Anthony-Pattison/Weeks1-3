@@ -4770,6 +4770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 894712404}
+  - component: {fileID: 894712405}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -4802,8 +4803,22 @@ Transform:
   - {fileID: 148377669}
   - {fileID: 477239267}
   - {fileID: 1968941577}
+  - {fileID: 1916870289}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894712405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894712403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f2cc413d867ce46b70a14c02a3a536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &899903701
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,7 +9010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916870289}
   m_Layer: 0
-  m_Name: Duck (1)
+  m_Name: Duck Baby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9009,8 +9024,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916870288}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.42, y: -0.52, z: -0.03498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6100001, y: -1.05, z: 0.03146383}
   m_LocalScale: {x: 0.52642715, y: 0.52642715, z: 0.52642715}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9026,7 +9041,7 @@ Transform:
   - {fileID: 444948181}
   - {fileID: 640933855}
   - {fileID: 842307536}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 894712404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964966427
 GameObject:
@@ -9695,7 +9710,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0185, y: -2.1352, z: 0}
-  m_LocalScale: {x: 18.939432, y: 5.8052797, z: 1}
+  m_LocalScale: {x: 21.617468, y: 6.2285776, z: 1.1414}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10042,7 +10057,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1074984667}
   - {fileID: 894712404}
-  - {fileID: 1916870289}
   - {fileID: 786533316}
   - {fileID: 485063393}
   - {fileID: 2062647501}
