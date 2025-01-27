@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fallowMouse : MonoBehaviour
+public class Chickenflyingmovment : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class fallowMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = mousePos; 
+        Vector2 mousePoition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = mousePoition;
     }
 }
