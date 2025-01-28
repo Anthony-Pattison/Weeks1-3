@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Duckmovement : MonoBehaviour
 {
-    public Transform start;
-    public Transform end;
 
    public AnimationCurve anim;
     [Range (0f,1f)]
@@ -21,8 +19,11 @@ public class Duckmovement : MonoBehaviour
     void Update()
     {
         Vector2 pos = transform.position;
+        // get keyboard input for wasd
         pos.x += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         pos.y += Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        // if the duck gets to any side of the screen
+        // stop it from moving
         if (pos.x < -15 ) {
             pos.x = -14.99f;
         }

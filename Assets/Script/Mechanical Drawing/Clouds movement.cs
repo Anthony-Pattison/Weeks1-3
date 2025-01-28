@@ -16,7 +16,8 @@ public class Cloudsmovement : MonoBehaviour
     void Update()
     {
         Vector2 cloudPos = transform.position;
-       
+       // using a public speed value so
+       // it can change the speed for the diffrent clouds
         cloudPos.x += Speed * Time.deltaTime;
 
         Vector2 cloudsInScreenSpace = Camera.main.WorldToScreenPoint(cloudPos);
